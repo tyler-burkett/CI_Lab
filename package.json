@@ -1,0 +1,22 @@
+{
+  "name": "ci_lab",
+  "version": "1.0.0",
+  "description": "Continuous Integration Lab for CS498",
+  "main": "src/main/server.js",
+  "scripts": {
+    "start": "node src/main/app.js",
+    "test": "node ./node_modules/mocha/bin/mocha --exit \"src/test/cases/**/*.js\""
+  },
+  "author": "Tyler Burkett",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.2.2",
+    "sinon": "^7.5.0",
+    "supertest": "^4.0.2"
+  }
+}
