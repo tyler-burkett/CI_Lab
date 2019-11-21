@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/main/app.js",
     "test": "node ./node_modules/mocha/bin/mocha --exit \"src/test/cases/**/*.js\"",
-    "code_cover": "nyc npm run test"
+    "code_cover": "nyc npm run test",
+    "lint": "./node_modules/.bin/eslint \"src/main/**/*.js\""
   },
   "author": "Tyler Burkett",
   "license": "ISC",
@@ -17,6 +18,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
     "mocha": "^6.2.2",
     "sinon": "^7.5.0",
     "supertest": "^4.0.2"
