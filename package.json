@@ -7,7 +7,8 @@
     "start": "node src/main/app.js",
     "test": "node ./node_modules/mocha/bin/mocha --exit \"src/test/cases/**/*.js\"",
     "code_cover": "nyc npm run test",
-    "lint": "./node_modules/.bin/eslint \"src/main/**/*.js\""
+    "lint": "./node_modules/.bin/eslint \"src/main/**/*.js\"",
+    "scan": "sonar-scanner -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.login=bb12fc3e20dddbe1aeaf949ccbe6f03ebd13406b -Dsonar.projectKey=tyler-burkett_CI_Lab -Dsonar.organization=tyler-burkett"
   },
   "author": "Tyler Burkett",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "eslint-plugin-react": "^7.16.0",
     "mocha": "^6.2.2",
     "sinon": "^7.5.0",
+    "sonar-scanner": "^3.1.0",
     "supertest": "^4.0.2"
   },
   "nyc": {
